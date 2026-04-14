@@ -9,8 +9,8 @@ from sklearn.ensemble import RandomForestRegressor
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-EXPORTS_DIR = os.path.join(BASE_DIR, '..', 'Model', 'exports')
-TRAIN_SCRIPT = os.path.join(BASE_DIR, '..', 'Model', 'aqi predictor.py')
+EXPORTS_DIR = os.path.join(BASE_DIR, 'exports')
+TRAIN_SCRIPT = os.path.join(BASE_DIR, 'aqi predictor.py')
 
 def generate_dummy_models():
     """Generates an ultra-fast dummy Random Forest model if the massive CSV is missing."""
